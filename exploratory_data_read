@@ -1,4 +1,4 @@
-## Coursera Exploratory Data Analysis Project 1 script
+## Coursera Exploratory Data Analysis Project 1 script - main programme that calls all of the plot functions
 
 ## First read in the dataset
 data <- read.delim("household_power_consumption.txt",sep=";")
