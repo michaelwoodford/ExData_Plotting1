@@ -1,0 +1,14 @@
+## Function to create a line plot of the 3 sub_metering readings against date
+
+plot3 <- function(datetime,data1,data2,data3){
+  
+  png("plot3.png")
+  plot(datetime,data1,type="l",ylab="Global Active Power (kilowatts)",
+       xlab = "")
+  lines(datetime,data2,col="red")
+  lines(datetime,data3,col="blue")
+  
+  legend("topright",col=c("black","red","blue"),lty=1,lwd=2,
+         legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+  dev.off()
+}
